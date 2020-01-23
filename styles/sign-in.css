@@ -50,7 +50,7 @@ body {
   width: 225px;
   margin: 0 auto;
   padding: 10px;
-  border: 1.5px solid  	#48b9a8;
+  border: 1.5px solid #48b9a8;
   border-radius: 10px;
   box-shadow: 4px 5px 2px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
   background-color: #fc6c8c;
@@ -68,7 +68,7 @@ body {
   align-self: center;
   font-family: 'Lato', sans-serif;
   color: #baf1e1;
-  border: 3px solid  	#48b9a8;
+  border: 3px solid	#48b9a8;
   border-radius: 10px;
   box-shadow: 4px 5px 2px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
   background-color: #fc6c8c;

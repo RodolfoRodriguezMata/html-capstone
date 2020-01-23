@@ -6,13 +6,36 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 5px 7.5px;
+  align-items: center;
+  padding: 7.5px 15px;
   background-color: #f4938a;
 }
 
-#menu {
-  height: 25px;
+main {
+  padding: 0 15px;
+  height: 83vh;
+}
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fa3c5d;
+  padding: 3vw 5vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#menu {
+  height: 5vw;
+  padding: 1vw;
+}
+
+#notification-bell {
+  height: 15vw;
+  padding: 1vw;
 }
 
 #logo-1 {
@@ -37,18 +60,95 @@ nav {
 
 #profiles-reel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-top: 2.5vw;
 }
 
-#reel-menu {
-  height: 15px;
+#main-picture {
+  width: 90vw;
+  margin-top: 2.5vw;
+  border: 5px solid #fa3c5d;
+  border-radius: 10px;
 }
 
-#reel-close {
-  height: 10px;
+#profile-details {
+  width: 75vw;
+  margin: 0 auto;
+  position: relative;
+  top: -17.5vw;
+  background-color: #fc6c8bd0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  padding: 2.5vw;
+}
+
+#profile-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vw;
+  color: #baf1e1;
+  padding: 1.5vw;
+}
+
+#profile-location {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 6vw;
+  color: #baf1e1;
+  padding: 1.5vw;
+}
+
+#profile-more {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  font-style: italic;
+  color: #368d80;
+  border-top: 1.5px solid gray;
+  padding: 2.5vw 0;
+}
+
+#add-user {
+  height: 6vw;
+  background-color: #baf1e1;
+  padding: 1.5vw;
+  margin-top: 1.5vw;
+  margin-right: 1.5vw;
+  border-radius: 100%;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+}
+
+#profile-close {
+  height: 6vw;
+  background-color: #baf1e1;
+  padding: 1.5vw;
+  border-radius: 100%;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
 .reel-picture {
-  height: 50px;
-  width: 50px;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 10px;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
 }
+
+.footer-icon {
+  height: 9vw;
+}
+
+.active-footer {
+  height: 7.5vw;
+  background-color: #f4938a;
+  padding: 2.5px;
+  border-radius: 100%;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+}
+
