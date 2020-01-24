@@ -1,0 +1,97 @@
+body {
+  background-color: #baf1e1;
+  padding-bottom: 2.5vw;
+}
+
+#go-back {
+  height: 10vw;
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+}
+
+#profile-picture {
+  width: 100vw;
+  margin-bottom: 7.5vw;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2.5vw 5vw;
+  position: absolute;
+  top: 57vw;
+  left: 16vw;
+}
+
+#profile-info {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vw;
+  margin: 0 auto;
+  background-color: #f4938a;
+  border-radius: 10px;
+  border: 2.5px solid	#48b9a8;
+  box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+}
+
+#gift-section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5vw;
+}
+
+#gift-icon {
+  height: 10vw;
+  padding: 1.5vw;
+}
+
+#gift-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4vw;
+  padding-left: 1vw;
+}
+
+#gift-p {
+  color: #fa3c5d;
+  font-weight: 700;
+}
+
+#gift-anchor {
+  font-style: italic;
+  color: #368d80;
+}
+
+.control-icons {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vw;
+  padding: 1.5vw;
+  border: 2.5px solid	#48b9a8;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  background-color: #baf1e18c;
+}
+
+.info-grouping {
+  padding: 1.5vw;
+}
+
+.category {
+  font-family: 'Lato', sans-serif;
+  font-size: 6vw;
+  color: #368d80;
+}
+
+.info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  padding-top: 1.5vw;
+}

@@ -13,6 +13,7 @@ nav {
 
 main {
   padding: 0 15px;
+  height: 80vh;
 }
 
 footer {
@@ -33,7 +34,7 @@ footer {
 }
 
 #notification-bell {
-  height: 7.5vw;
+  height: 5vw;
   padding: 1vw;
 }
 
