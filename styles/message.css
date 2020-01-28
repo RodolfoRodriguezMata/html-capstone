@@ -1,0 +1,94 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: #f4938a;
+  height: 10vh;
+}
+
+main {
+  height: 75vh;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #baf1e1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fa3c5c88;
+  padding: 3vw 5vw;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+}
+
+input {
+  padding: 10px;
+  border: 1.5px solid #48b9a8;
+  border-radius: 10px;
+  background-color: #fc6c8c;
+  color: #baf1e1;
+  width: 67.5vw;
+}
+
+input::placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #141414;
+}
+
+#back {
+  height: 8vw;
+  padding: 1vw;
+}
+
+#recipient {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  color: #baf1e1;
+}
+
+#call {
+  height: 5vw;
+  padding: 1vw;
+}
+
+.message-left {
+  background-color: #48b9a8;
+  width: 80%;
+  padding: 2.5vw;
+  position: relative;
+  left: 2.5vw;
+  margin-bottom: 2.5vw;
+  display: flex;
+  border-radius: 10px;
+}
+
+.message-right {
+  background-color: #f7f7f8;
+  width: 80%;
+  padding: 2.5vw;
+  position: relative;
+  right: -12.5vw;
+  margin-bottom: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.timestamp {
+  color: #141414;
+  font-weight: 900;
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding: 1.5vw;
+}
+
+.footer-icon {
+  height: 5vw;
+}
