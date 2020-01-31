@@ -3,12 +3,24 @@ body {
   background-color: #baf1e1;
 }
 
-nav {
+#nav-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 7.5px 15px;
   background-color: #f4938a;
+}
+
+#nav-pc {
+  display: none;
+}
+
+#pc-left {
+  display: none;
+}
+
+#pc-right {
+  display: none;
 }
 
 main {
@@ -38,17 +50,17 @@ footer {
   padding: 1vw;
 }
 
-#logo-1 {
+.logo-1 {
   font-family: 'Lato', sans-serif;
   font-size: 37px;
   color: #fa3c5d;
 }
 
-#logo-2 {
+.logo-2 {
   height: 50px;
 }
 
-#logo-3 {
+.logo-3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: #baf1e1;
@@ -148,3 +160,273 @@ footer {
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #nav-mobile {
+    display: none;
+  }
+
+  #nav-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4938a;
+    padding: 1.5vw 2vw;
+  }
+
+  #location-nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  #pc-left {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    padding: 1.5vw;
+  }
+
+  #profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4938a;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  }
+
+  #user-picture {
+    height: 6vw;
+    width: 6vw;
+    border: 1px solid #fa3c5d;
+    border-radius: 10px;
+    margin: 1vw;
+  }
+
+  #user-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  #user-premium {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+  }
+
+  #user-premium a {
+    color: #368d80;
+  }
+
+  #heart-number {
+    background-color: #fa3c5d;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 900;
+    padding: 1vw;
+    border-radius: 10px;
+  }
+
+  #premium-btn {
+    font-family: 'Lato', sans-serif;
+    color: #baf1e1;
+    border: 1px solid	#48b9a8;
+    border-radius: 10px;
+    background-color: #fc6c8c;
+    padding: 5px 2px;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #left-ul {
+    padding: 2.5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+    background-color: #f4938a;
+  }
+
+  #mobile-main {
+    grid-column: 2 / 3;
+  }
+
+  #main-picture {
+    width: 35vw;
+  }
+
+  #pc-right {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+    padding: 1.5vw;
+  }
+
+  #premium-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5vw;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+    background-color: #f4938a;
+  }
+
+  #premium-right-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+
+  #premium-right-row-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  #premium-right-row-2 {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    color: #2928287e;
+  }
+
+  #package-btn {
+    font-family: 'Lato', sans-serif;
+    color: #baf1e1;
+    border: 1px solid	#48b9a8;
+    border-radius: 10px;
+    background-color: #fc6c8c;
+    padding: 5px 2px;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5vw;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+    background-color: #f4938a;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #profile-details {
+    display: none;
+  }
+
+  #profile-info-pc {
+    width: 22vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5vw;
+    margin: 0 auto;
+    background-color: #f4938a;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  }
+  
+  #gift-section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.5vw;
+  }
+  
+  #gift-icon {
+    height: 2.5vw;
+    padding: 1.5vw;
+  }
+  
+  #gift-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+  }
+  
+  #gift-p {
+    color: #fa3c5d;
+    font-weight: 700;
+  }
+  
+  #gift-anchor {
+    font-style: italic;
+    color: #368d80;
+  }
+
+  .nav-logo {
+    height: 2.5vw;
+    padding: 1vw;
+  }
+
+  .pc-icon-sizing {
+    height: 3.5vw;
+    padding: 1vw;
+  }
+
+  .profile-row {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5vw;
+  }
+  
+  .left-nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #2928287e;
+  }
+
+  .info-grouping {
+    padding: 1.5vw;
+  }
+  
+  .category {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vw;
+    color: #368d80;
+  }
+  
+  .info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    padding-top: 1.5vw;
+  }
+
+  .reel-picture {
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 5px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  }
+}

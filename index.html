@@ -10,18 +10,85 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav-mobile">
         <img id="menu" src="images/menu.svg" alt="three stacked bars">
-        <div id="logo">
-          <span id="logo-1">MEET</span>
-          <img id="logo-2" src="images/logo-arrow.svg">
-          <span id="logo-3">up</span>
+        <div class="logo">
+          <span class="logo-1">MEET</span>
+          <img class="logo-2" src="images/logo-arrow.svg">
+          <span class="logo-3">up</span>
         </div>
         <img id="notification-bell" src="images/bell.svg" alt="outtline of a bell for notifications">
       </nav>
+      <nav id="nav-pc">
+        <div id="location-nav">
+          <img class="nav-logo" src="images/location.svg" alt="location logo">
+          <p>Location: #######</p>
+        </div>
+        <div class="logo">
+          <span class="logo-1">MEET</span>
+          <img class="logo-2" src="images/logo-arrow.svg">
+          <span class="logo-3">up</span>
+        </div>
+        <div>
+          <img class="nav-logo" src="images/filter.svg" alt="three sliders to represent options">
+          <img class="nav-logo" src="images/bell.svg" alt="outline of a bell">
+          <img class="nav-logo" src="images/profile.svg" alt="clipboard with an avatar to represent a profile">
+        </div>
+      </nav>
     </header>
     <main>
-      <ul id="profiles-reel">
+      <section id="pc-left">
+        <div id="profile-card">
+          <span class="profile-row">
+            <img id="user-picture" src="images/profile-6.jpeg" alt="stock profile picture">
+            <span>
+              <p id="user-name">Namey Namenstein</p>
+              <span id="user-premium">Status:<a><p>No Premium</p></a></span>
+            </span>
+            <img class="pc-icon-sizing" src="images/settings.svg" alt="colored gear for settings icon">
+          </span>
+          <span class="profile-row">
+            <img class="pc-icon-sizing" src="images/heart.svg" alt="heart composed of two hands"> <p id="heart-number">XXX</p>
+            <button id="premium-btn" type="button"><img class="pc-icon-sizing" src="images/premium.svg" alt="Diamond wrapped in a colored ribbon"> Get premium!</button>
+          </span class="profile-row">
+        </div>
+        <ul id="left-ul">
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Begin Encounters</p>
+          </li c>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>People Nearby</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Live Channels</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Messages</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Featured People</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Gifts</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Popularity Rating</p>
+          </li>
+          <li class="left-nav">
+            <img class="pc-icon-sizing" src="images/list-item.svg" alt="arrow above a circle">
+            <p>Daily Tasks</p>
+          </li>
+        </ul>
+      </section>
+      <section id="mobile-main">
+        <ul id="profiles-reel">
         
         <li>
           <img class="reel-picture" src="images/profile-2.jpeg" alt="stock profile picture">
@@ -35,21 +102,63 @@
         <li>
           <img class="reel-picture" src="images/profile-5.jpeg" alt="stock profile picture">
         </li>
-      </ul>
-      <div id="home-profile">
+        </ul>
+        <div id="home-profile">
         <img id="main-picture" src="images/profile-1.jpeg" alt="stock profile photo">
         <span id="profile-details">
           <span id="profile-info">
             <p id="profile-name">Person's name</p>
             <p id="profile-location">Location, Country.</p>
-            <a id="profile-more"><p>Learn More >></p></a>
+            <a id="profile-more" href="https://raw.githack.com/RodolfoRodriguezMata/html-capstone/feature-branch/profile.html"><p>Learn More >></p></a>
             <span>
               <img id="add-user" src="images/add-user.svg" alt="outline of a person with a plus sign">
               <img id="profile-close" src="images/close.svg" alt="close icon">
             </span>
           </span>
         </span>
-      </div>
+        </div>
+      </section>
+      <section id="pc-right">
+        <div id="premium-right">
+          <span id="premium-right-row">
+            <img class="pc-icon-sizing" src="images/crown.svg" alt="emperor's crown icon">
+            <span>
+              <p id="premium-right-row-1">Become popular!</p>
+              <p id="premium-right-row-2">Start receiving twice as many messages, calls, and more!</p>
+            </span>
+          </span>
+          <button id="package-btn" type="button">Purchase package</button>
+        </div>
+        <div id="filter">
+          <p>Filter search</p>
+          <img class="pc-icon-sizing" src="images/filter.svg" alt="icon of three sliders to represent settings that can be adjusted">
+        </div>
+        <div id="profile-info-pc">
+          <span class="info-grouping">
+            <p class="category">Name & Age</p>
+            <p class="info">Name McSurname, 23 y.o.</p>
+          </span>
+          <span class="info-grouping">
+            <p class="category">Location</p class="category">
+            <p class="info">Location, Country</p class="info">
+          </span>
+          <span class="info-grouping">
+            <p class="category">Interests</p class="category">
+            <p class="info">Generic activity, exotic activity, outdoors activity, popular activity.</p class="info">
+          </span>
+          <span class="info-grouping">
+            <p class="category">Languages</p class="category">
+            <p class="info">English (native), Spanish (intermediate).</p class="info">
+          </span>
+          <span id="gift-section">
+            <img id="gift-icon" src="images/gift.svg" alt="Gift box with stars inside">
+            <span id="gift-text">
+              <p id="gift-p">Forge a bond!</p>
+              <a><p id="gift-anchor">A gift can spark the light! Gift and communicate immediately >></p id="gift-anchor"></a>
+            </span>
+          </span>
+        </div>
+      </section>
     </main>
     <footer>
       <img class="footer-icon" src="images/profile.svg" alt="outline of a clipboard">
