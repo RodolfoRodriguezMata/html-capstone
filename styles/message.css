@@ -1,34 +1,4 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 15px;
-  background-color: #f4938a;
-  height: 10vh;
-}
-
-main {
-  height: 75vh;
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: #baf1e1;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fa3c5c88;
-  padding: 3vw 5vw;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 10vh;
-}
-
-input {
+#conversation-input {
   padding: 10px;
   border: 1.5px solid #48b9a8;
   border-radius: 10px;
@@ -37,9 +7,44 @@ input {
   width: 67.5vw;
 }
 
-input::placeholder {
+#conversation-input::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   color: #141414;
+}
+
+#nav-pc {
+  display: none;
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: #f4938a;
+  height: 10vh;
+}
+
+#pc-left {
+  display: none;
+}
+
+#inbox {
+  display: none;
+}
+
+#active-conversation {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #baf1e1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#conversation {
+  height: 100%;
+  align-items: flex-end;
+  padding: 2.5vw;
 }
 
 #back {
@@ -50,6 +55,7 @@ input::placeholder {
 #recipient {
   font-family: 'Montserrat', sans-serif;
   font-size: 5vw;
+  font-weight: 900;
   color: #baf1e1;
 }
 
@@ -58,12 +64,25 @@ input::placeholder {
   padding: 1vw;
 }
 
+#conversation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fa3c5c88;
+  padding: 3vw 5vw;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+}
+
 .message-left {
   background-color: #48b9a8;
   width: 80%;
   padding: 2.5vw;
-  position: relative;
-  left: 2.5vw;
+  margin-left: 0;
+  margin-right: auto;
   margin-bottom: 2.5vw;
   display: flex;
   border-radius: 10px;
@@ -73,8 +92,8 @@ input::placeholder {
   background-color: #f7f7f8;
   width: 80%;
   padding: 2.5vw;
-  position: relative;
-  right: -12.5vw;
+  margin-left: auto;
+  margin-right: 0;
   margin-bottom: 2.5vw;
   display: flex;
   justify-content: space-between;
@@ -91,4 +110,320 @@ input::placeholder {
 
 .footer-icon {
   height: 5vw;
+}
+
+body {
+  background-color: #baf1e1;
+}
+
+@media screen and (min-width: 1024px) {  
+  #nav-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4938a;
+    padding: 1.5vw 2vw;
+  }
+
+  #location-nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  #pc-left {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    height: 75vh;
+    padding: 1.5vw;
+  }
+
+  #profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4938a;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  }
+
+  #user-picture {
+    height: 6vw;
+    width: 6vw;
+    border: 1px solid #fa3c5d;
+    border-radius: 10px;
+    margin: 1vw;
+  }
+
+  #user-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  #user-premium {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5vw;
+    margin-right: 0.25vw;
+  }
+
+  #user-premium a {
+    color: #368d80;
+  }
+
+  #heart-number {
+    background-color: #fa3c5d;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 900;
+    padding: 1vw;
+    border-radius: 10px;
+  }
+
+  #premium-btn {
+    font-family: 'Lato', sans-serif;
+    color: #baf1e1;
+    border: 1px solid	#48b9a8;
+    border-radius: 10px;
+    background-color: #fc6c8c;
+    padding: 5px 2px;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #left-ul {
+    padding: 2.5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+    background-color: #f4938a;
+  }
+
+  #user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  #inbox {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    margin: 1.5vw;
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+    background-color: #f4938a;
+  }
+
+  #inbox-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+  }
+
+  #inbox-search {
+    height: 2.5vw;
+    padding: 0.25vw;
+    margin-right: 1vw;
+  }
+
+  #inbox-input {
+    height: 2.5vw;
+    width:  15vw;
+    padding: 0 0.75vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+  }
+
+  #inbox-input::placeholder {
+    color: #222;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+  }
+
+  #new-chat {
+    height: 2.5vw;
+    padding: 0.25vw;
+    margin-left: 1vw;
+  }
+
+  #active-conversation {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    height: 75vh;
+    margin: 1.5vw;
+  }
+
+  #mobile-nav {
+    border-radius: 10px;
+    border: 2.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+  }
+
+  #back {
+    height: 2.5vw;
+  }
+
+  #recipient {
+    font-size: 1.5vw;
+  }
+
+  #call {
+    height: 2.5vw;
+  }
+
+  #conversation {
+    font-size: 11px;
+  }
+
+  #message-fix {
+    display: none;
+  }
+
+  #conversation-footer {
+    height: 7.5vh;
+    padding: 0.5vw;
+  }
+
+  #conversation-input {
+    width: 17.5vw;
+  }
+
+  .nav-logo {
+    height: 2.5vw;
+    padding: 1vw 1.5vw;
+  }
+
+  .logo-1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 37px;
+    color: #fa3c5d;
+  }
+  
+  .logo-2 {
+    height: 50px;
+  }
+  
+  .logo-3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #baf1e1;
+  }
+
+  .profile-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5vw;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    color: #222;
+  }
+
+  .left-nav-icons {
+    height: 1.5vw;
+  }
+
+  .pc-icon-sizing {
+    height: 2.5vw;
+    padding: 0.25vw;
+  }
+
+  .chat {
+    display: flex;
+    height: 6vw;
+    padding: 0.1vw 1.5vw;
+    align-items: center;
+  }
+
+  .inbox-profile {
+    height: 3.5vw;
+    width: 3.5vw;
+    border-radius: 10px;
+    border: 1.5px solid	#48b9a8;
+    box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
+  }
+
+  .chat-info {
+    padding: 0.75vw;
+  }
+
+  .chat-recipient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75vw;
+  }
+
+  .username {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #f7f7f8;
+  }
+
+  .last-message {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    color: rgba(34, 34, 34, 0.5);
+  }
+
+  .chat-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    color: #141414;
+    padding: 0.5vw;
+  }
+
+  .message-left {
+    padding: 0.5vw;
+    align-items: center;
+    margin-bottom: 0.75vw;
+  }
+
+  .message-right {
+    padding: 0.5vw;
+    align-items: center;
+    margin-bottom: 0.75vw;
+  }
+
+  .footer-icon {
+    height: 2.5vw;
+  }
+
+  body {
+    height: 100vh;
+    background-color: #baf1e1;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    grid-template-rows: 1fr;
+    background-color: #baf1e1;
+  }
 }
