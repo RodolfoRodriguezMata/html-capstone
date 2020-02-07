@@ -99,6 +99,11 @@ footer {
   padding: 2.5vw;
 }
 
+#profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
 #profile-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 6vw;
@@ -119,15 +124,20 @@ footer {
   font-weight: 700;
   font-style: italic;
   color: #368d80;
-  border-top: 1.5px solid gray;
   padding: 2.5vw 0;
+}
+
+#profile-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5vw;
 }
 
 #add-user {
   height: 6vw;
   background-color: #baf1e1;
   padding: 1.5vw;
-  margin-top: 1.5vw;
   margin-right: 1.5vw;
   border-radius: 100%;
   border: 2.5px solid	#48b9a8;
