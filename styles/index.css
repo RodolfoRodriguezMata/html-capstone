@@ -359,18 +359,18 @@ a {
     border: 2.5px solid	#48b9a8;
     box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
   }
-  
+
   #gift-section {
     display: flex;
     justify-content: space-around;
     padding-top: 2.5vw;
   }
-  
+
   #gift-icon {
     height: 2.5vw;
     padding: 1.5vw;
   }
-  
+
   #gift-text {
     display: flex;
     flex-direction: column;
@@ -379,12 +379,12 @@ a {
     font-size: 1.5vw;
     padding-left: 1vw;
   }
-  
+
   #gift-p {
     color: #fa3c5d;
     font-weight: 700;
   }
-  
+
   #gift-anchor {
     font-style: italic;
     color: #368d80;
@@ -401,12 +401,12 @@ a {
   }
 
   .profile-row {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1.5vw;
   }
-  
+
   .left-nav {
     display: flex;
     align-items: center;
@@ -418,13 +418,13 @@ a {
   .info-grouping {
     padding: 1.5vw;
   }
-  
+
   .category {
     font-family: 'Lato', sans-serif;
     font-size: 1.5vw;
     color: #368d80;
   }
-  
+
   .info {
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
