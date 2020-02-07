@@ -11,6 +11,10 @@ body {
   background-color: #f4938a;
 }
 
+.header-fix {
+  display: none;
+}
+
 #nav-pc {
   display: none;
 }

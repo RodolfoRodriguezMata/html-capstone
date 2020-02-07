@@ -77,6 +77,10 @@
   height: 10vh;
 }
 
+.header-fix {
+  display: none;
+}
+
 .message-left {
   background-color: #48b9a8;
   width: 80%;
