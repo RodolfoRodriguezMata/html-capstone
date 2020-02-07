@@ -120,6 +120,11 @@ body {
   background-color: #baf1e1;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (min-width: 1024px) {
   #nav-pc {
     display: flex;
