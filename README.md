@@ -67,13 +67,14 @@ Built for Microverse following these requirements:
 - [x] Mobile version that includes a display of nearby persons along with the one currently being presented, there's a control section for actions to betaken along with upper and bottom navs
 - [x] Pc version that includes two more sections, the left one includes details f the user, as well as possible further features for the site, the right section includes the details in the profile page (mobile only) and premium plugins.
 
-#### Profile details page
-
--[x] Mobile only, it details the information provided by the selected user
-
 #### Message page
-- [x] The mobile version is only the chat between the selected person and the user, with navs on top and bottom
+- [x] The mobile version is the inbox, which contains a bottom nav and a top input.
 - [x] The pc version includes the left section of the main page, an inbox view for all the messages and the active conversation
+
+#### Chat details page
+
+-[x] Mobile only, it details the chat had with the selected user
+
 
 and following this design:
 https://www.behance.net/gallery/70285515/Swipex-This-application-for-dating
