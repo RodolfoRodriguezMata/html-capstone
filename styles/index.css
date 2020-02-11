@@ -8,7 +8,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 7.5px 15px;
-  background-color: #f4938a;
+}
+
+#mobile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-fix {
@@ -29,28 +41,28 @@ body {
 
 main {
   padding: 0 15px;
-  height: 80vh;
+  height: auto;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fa3c5d;
+  background-color: #fff;
   padding: 3vw 5vw;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
 #menu {
-  height: 5vw;
+  height: 25px;
   padding: 1vw;
 }
 
 #notification-bell {
-  height: 5vw;
+  height: 20px;
   padding: 1vw;
 }
 
@@ -73,29 +85,29 @@ footer {
 #profiles-reel {
   display: flex;
   justify-content: space-between;
-  margin-top: 2.5vw;
+  margin-top: 10px;
 }
 
 #main-picture {
-  width: 90vw;
-  margin-top: 2.5vw;
+  width: 280px;
+  margin-top: 10px;
   border-radius: 10px;
   box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
+  align-self: center;
 }
 
 #profile-details {
-  width: 75vw;
+  width: 225px;
   margin: 0 auto;
   position: relative;
-  top: -20vw;
-  background-color: #fc6c8bd0;
+  top: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #fff;
   border-radius: 10px;
-  border: 2.5px solid	#48b9a8;
-  box-shadow: 1px 1px 1px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
   padding: 2.5vw;
 }
 
@@ -106,70 +118,71 @@ footer {
 
 #profile-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 6vw;
-  color: #baf1e1;
-  padding: 1.5vw;
+  font-size: 17px;
+  color: #222;
+  padding: 7.5px;
 }
 
 #profile-location {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 6vw;
-  color: #baf1e1;
-  padding: 1.5vw;
+  font-size: 18px;
+  color: #a5a5a9;
+  padding: 10px;
 }
 
 #profile-more {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 5vw;
+  font-size: 15px;
   font-weight: 700;
   font-style: italic;
-  color: #368d80;
-  padding: 2.5vw 0;
+  color: #c6cdd5;
+  padding: 17.5px 0;
 }
 
 #profile-controls {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5vw;
+  padding: 15px;
 }
 
 #add-user {
-  height: 6vw;
-  background-color: #baf1e1;
+  height: 25px;
+  background-color: #fff;
   padding: 1.5vw;
   margin-right: 1.5vw;
-  border-radius: 100%;
-  border: 2.5px solid	#48b9a8;
+  border-radius: 10px;
+  border: 2.5px solid	#ff9573;
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
 #profile-close {
-  height: 6vw;
-  background-color: #baf1e1;
+  height: 25px;
+  background-color: #fff;
   padding: 1.5vw;
-  border-radius: 100%;
-  border: 2.5px solid	#48b9a8;
+  border-radius: 10px;
+  border: 2.5px solid	#ff9573;
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
 .reel-picture {
-  height: 20vw;
-  width: 20vw;
+  height: 50px;
+  width: 50px;
   border-radius: 10px;
   box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
+  margin: 5px;
 }
 
 .footer-icon {
-  height: 9vw;
+  height: 25px;
 }
 
 .active-footer {
-  height: 7.5vw;
-  background-color: #f4938a;
-  padding: 2.5px;
-  border-radius: 100%;
-  border: 2.5px solid	#48b9a8;
+  height: 27.5px;
+  background-color: #5355ca;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
