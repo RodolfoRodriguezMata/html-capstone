@@ -448,11 +448,12 @@ a {
   }
 
   .left-nav-icons {
-    height: 1.5vw;
+    height: 15px;
+    margin-right: 7.5px;
   }
 
   .pc-icon-sizing {
-    height: 2.5vw;
+    height: 25px;
     padding: 0.25vw;
   }
 
