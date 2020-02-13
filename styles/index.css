@@ -49,7 +49,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 3vw 5vw;
+  padding: 12.5px 17.5px;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -58,22 +58,22 @@ footer {
 
 #menu {
   height: 25px;
-  padding: 1vw;
+  padding: 2.5px;
 }
 
 #notification-bell {
   height: 20px;
-  padding: 1vw;
+  padding: 2.5px;
 }
 
 .logo-1 {
   font-family: 'Lato', sans-serif;
-  font-size: 37px;
+  font-size: 30px;
   color: #434565;
 }
 
 .logo-2 {
-  height: 50px;
+  height: 30px;
 }
 
 .logo-3 {
@@ -97,18 +97,19 @@ footer {
 }
 
 #profile-details {
-  width: 225px;
+  height: auto;
+  width: 200px;
   margin: 0 auto;
   position: relative;
-  top: -25px;
+  top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
-  padding: 2.5vw;
+  padding: 15px;
 }
 
 #profile-info {
@@ -118,25 +119,25 @@ footer {
 
 #profile-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 13px;
   color: #222;
   padding: 7.5px;
 }
 
 #profile-location {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  color: #a5a5a9;
-  padding: 10px;
+  font-size: 12px;
+  color: #434344;
+  padding: 5px;
 }
 
 #profile-more {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   font-style: italic;
-  color: #c6cdd5;
-  padding: 17.5px 0;
+  color: #434344;
+  padding: 7.5px 0;
 }
 
 #profile-controls {
@@ -147,19 +148,19 @@ footer {
 }
 
 #add-user {
-  height: 25px;
+  height: 15px;
   background-color: #fff;
-  padding: 1.5vw;
-  margin-right: 1.5vw;
+  padding: 5px;
+  margin-right: 17.5px;
   border-radius: 10px;
   border: 2.5px solid	#ff9573;
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
 }
 
 #profile-close {
-  height: 25px;
+  height: 15px;
   background-color: #fff;
-  padding: 1.5vw;
+  padding: 5px;
   border-radius: 10px;
   border: 2.5px solid	#ff9573;
   box-shadow: 1px 1px 1px 1px #222, inset 1px 1.5px rgba(34, 34, 34, 0.5);
@@ -206,8 +207,8 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 1.5vw 2vw;
-    box-shadow: 0 2px 3px 1px rgba(34, 34, 34, 0.5);
+    box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
+    padding: 17.5px 20px;
   }
 
   #location-nav {
@@ -222,22 +223,25 @@ a {
     display: flex;
     flex-direction: column;
     grid-column: 1 / 2;
-    padding: 1.5vw;
+    height: 60vh;
+    padding: 10px;
   }
 
   #profile-card {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
   }
 
   #user-picture {
-    height: 6vw;
-    width: 6vw;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
-    margin: 1vw;
+    margin: 7.5px;
   }
 
   #user-name {
@@ -250,11 +254,14 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 11px;
     font-style: italic;
-    margin-top: 0.25vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5vw;
+    margin-right: 2.5px;
   }
 
   #user-premium a {
-    color: #5f60ce;
+    color: #5355ca;
   }
 
   #heart-number {
@@ -263,7 +270,8 @@ a {
     font-size: 15px;
     font-style: italic;
     font-weight: 900;
-    padding: 1vw;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   #premium-btn {
@@ -286,26 +294,32 @@ a {
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
   }
 
+  #user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   #mobile-main {
     grid-column: 2 / 3;
   }
 
   #main-picture {
-    width: 35vw;
+    width: 30vw;
   }
 
   #pc-right {
     display: flex;
     flex-direction: column;
     grid-column: 3 / 4;
-    padding: 1.5vw;
+    padding: 15px;
   }
 
   #premium-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5vw;
+    padding: 10px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
@@ -313,15 +327,21 @@ a {
 
   #premium-right-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: 2.5px;
+  }
+
+  #crown {
+    height: 25px;
+    margin-right: 5px;
   }
 
   #premium-right-row-1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 11px;
   }
 
   #premium-right-row-2 {
@@ -337,7 +357,8 @@ a {
     border-radius: 10px;
     background-color: #5355ca;
     padding: 5px 2px;
-    margin-left: 1vw;
+    margin-top: 5px;
+    margin-left: 7.5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -347,7 +368,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5vw;
+    padding: 10px;
     margin: 10px 0;
     background-color: #fff;
     border-radius: 10px;
@@ -365,9 +386,10 @@ a {
 
   #profile-info-pc {
     width: 22vw;
+    height: 35vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 2.5vw;
+    padding: 15px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -377,7 +399,7 @@ a {
   #gift-section {
     display: flex;
     justify-content: space-around;
-    padding-top: 2.5vw;
+    padding-top: 5px;
   }
 
   #gift-icon {
@@ -390,8 +412,8 @@ a {
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5vw;
-    padding-left: 1vw;
+    font-size: 11px;
+    padding-left: 2.5px;
   }
 
   #gift-p {
@@ -409,43 +431,48 @@ a {
     padding: 1vw;
   }
 
-  .pc-icon-sizing {
-    height: 3.5vw;
-    padding: 1vw;
-  }
-
   .profile-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1.5vw;
+    padding: 0.5vw;
   }
 
   .left-nav {
     display: flex;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    padding: 0.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
-    color: #2928287e;
+    color: #222;
+  }
+
+  .left-nav-icons {
+    height: 1.5vw;
+  }
+
+  .pc-icon-sizing {
+    height: 2.5vw;
+    padding: 0.25vw;
   }
 
   .info-grouping {
     display: flex;
     flex-direction: column;
-    padding: 1.5vw;
+    padding: 2.5px;
   }
 
   .category {
     font-family: 'Lato', sans-serif;
-    font-size: 1vw;
+    font-size: 9px;
     color: #bac2c9;
   }
 
   .info {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
+    font-size: 10px;
     color: #222;
-    padding-top: 0.5vw;
+    padding-top: 3px;
   }
 
   .reel-picture {

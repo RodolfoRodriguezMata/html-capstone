@@ -13,8 +13,8 @@
 #inbox {
   display: flex;
   flex-direction: column;
-  height: auto;
-  margin: 1.5vw;
+  height: 75vh;
+  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
@@ -25,19 +25,21 @@
   justify-content: space-between;
   align-items: center;
   height: auto;
-  padding: 1.5vw;
+  padding: 0 2px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
 }
 
 #inbox-search {
-  height: 40px;
-  padding: 1.25vw;
-  margin-right: 1vw;
+  height: 25px;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 #inbox-input {
-  height: 40px;
+  height: 25px;
   width: auto;
-  padding: 0 0.75vw;
+  padding: 0 5px;
   border: none;
 }
 
@@ -48,9 +50,9 @@
 }
 
 #new-chat {
-  height: 40px;
-  padding: 1.25vw;
-  margin-left: 1vw;
+  height: 25px;
+  padding: 12.5px;
+  margin-left: 10px;
 }
 
 #chat-list {
@@ -88,16 +90,16 @@
 
 .chat {
   display: flex;
-  height: auto;
-  padding: 0.75vw 1.5vw;
+  height: 45px;
+  padding: 7.5px 7.5px;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 0.5vw;
+  margin-top: 2.5px;
 }
 
 .inbox-profile {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
@@ -111,7 +113,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75vw;
+  padding: 5px;
 }
 
 .username {
@@ -149,7 +151,6 @@
 
 body {
   background-color: #f8f8f8;
-  overflow: scroll;
 }
 
 a {
@@ -164,7 +165,7 @@ a {
     align-items: center;
     background-color: #fff;
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
-    padding: 1.5vw 2vw;
+    padding: 17.5px 20px;
   }
 
   #location-nav {
@@ -179,8 +180,8 @@ a {
     display: flex;
     flex-direction: column;
     grid-column: 1 / 2;
-    height: 75vh;
-    padding: 1.5vw;
+    height: 60vh;
+    padding: 10px;
   }
 
   #profile-card {
@@ -192,12 +193,12 @@ a {
   }
 
   #user-picture {
-    height: 6vw;
-    width: 6vw;
+    height: 45px;
+    width: 45px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
-    margin: 1vw;
+    margin: 7.5px;
   }
 
   #user-name {
@@ -213,7 +214,7 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 0.5vw;
-    margin-right: 0.25vw;
+    margin-right: 2.5px;
   }
 
   #user-premium a {
@@ -226,7 +227,7 @@ a {
     font-size: 15px;
     font-style: italic;
     font-weight: 900;
-    padding: 1vw;
+    padding: 10px;
     border-radius: 10px;
   }
 
@@ -277,8 +278,10 @@ a {
   #active-conversation {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    height: 100vh;
-    margin: 1.5vw 1.5vw 0 1.5vw;
+    height: 75vh;
+    margin: 10px 25px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -329,6 +332,8 @@ a {
     align-items: center;
     height: 7.5vh;
     padding: 0.5vw;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 2px rgba(34, 34, 34, 0.5);
     background-color: #fff;
     position: sticky;
     bottom: 0;
