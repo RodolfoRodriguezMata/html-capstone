@@ -2,10 +2,6 @@
   display: none;
 }
 
-#mobile-nav {
-  display: none;
-}
-
 #pc-left {
   display: none;
 }
@@ -387,7 +383,7 @@ a {
     font-size: 11px;
     color: rgba(34, 34, 34, 0.5);
   }
-  
+
   .chat-content {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
