@@ -1,0 +1,92 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #4d50bf;
+  padding: 15px;
+}
+
+#logo-1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 37px;
+  color: #fff;
+}
+
+#logo-2 {
+  height: 50px;
+}
+
+#logo-3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+#logo-caption {
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 13px;
+}
+
+#input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 175px;
+  padding: 25px;
+}
+
+.logo {
+  height: 85px;
+  width: 200px;
+  background-color: #4e51c1;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: center;
+  border: 5px solid  	#ff8b66;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+}
+
+.info-style {
+  width: 225px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1.5px solid #ff8b66;
+  border-radius: 10px;
+  box-shadow: 4px 5px 2px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  background-color: #fff;
+  color: #a6a7b8;
+}
+
+.info-style::placeholder {
+  color: #a6a7b8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-button {
+  width: 75px;
+  font-size: 20px;
+  align-self: center;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  border: 3px solid	#ff8b66;
+  border-radius: 10px;
+  box-shadow: 4px 5px 2px 1px #222, inset 2.5px 3px rgba(34, 34, 34, 0.5);
+  background-color: #4547b3;
+  padding: 5px 0;
+}
+
+.registration {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
